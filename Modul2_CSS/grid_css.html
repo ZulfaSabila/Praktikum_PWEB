@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 200px 100px;
+  grid-template-rows: 50px 100px;
+  gap: 15px; /* jarak antar grid item diubah jadi 15px */
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.grid-item {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Warna berbeda untuk tiap grid item */
+.grid-item:nth-child(1) { background-color: #4CAF50; }
+.grid-item:nth-child(2) { 
+  background-color: #2196F3; 
+  grid-column: span 2; /* item ini menempati 2 kolom */
+}
+.grid-item:nth-child(3) { background-color: #f44336; }
+.grid-item:nth-child(4) { background-color: #ff9800; }
+.grid-item:nth-child(5) { background-color: #9c27b0; }
+.grid-item:nth-child(6) { background-color: #3f51b5; }
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div> <!-- Ini yang menempati 2 kolom -->
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+
+</body>
+</html>
