@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GlowSkin - Skincare Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  body {
+    background: linear-gradient(to right, #e6ffe6, #f0fff0); 
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .navbar {
+    background-color: #409b1c; 
+  }
+  .navbar-brand, .nav-link {
+    color: white !important;
+  }
+  .card {
+    background-color: #f0fff0; 
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+  }
+  .btn-custom {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    transition: background 0.3s;
+  }
+  .btn-custom:hover {
+    background-color: #2e7031; 
+  }
+  footer {
+    background-color: #388e3c;
+    color: white;
+  }
+  footer a {
+    color: #c8e6c9;
+    text-decoration: underline;
+  }
+  footer a:hover {
+    color: #fff;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GlowSkin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Informasi Perusahaan -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">GlowSkin</h2>
+  <table class="table table-bordered table-striped bg-white">
+    <tbody>
+      <tr><th>Nama Perusahaan</th><td>GlowSkin Natural Beauty</td></tr>
+      <tr><th>Tahun Berdiri</th><td>2025</td></tr>
+      <tr><th>Jumlah Karyawan</th><td>5</td></tr>
+      <tr><th>Lokasi Kantor</th><td>Bontang, Indonesia</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Produk Skincare -->
+  <h2 class="text-center mt-5 mb-4">Produk Unggulan Kami</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="serum.png" class="card-img-top" alt="Face Serum">
+        <div class="card-body">
+          <h5 class="card-title">Glow Serum</h5>
+          <p class="card-text">Serum wajah dengan vitamin C dan hyaluronic acid untuk kulit cerah alami.</p>
+          <a href="#" class="btn btn-custom">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="facewash.png" class="card-img-top" alt="Face Wash">
+        <div class="card-body">
+          <h5 class="card-title">Purity Cleanser</h5>
+          <p class="card-text">Pembersih wajah lembut yang menjaga kelembapan alami kulit.</p>
+          <a href="#" class="btn btn-custom">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="moist.png" class="card-img-top" alt="Moisturizer">
+        <div class="card-body">
+          <h5 class="card-title">Hydra Cream</h5>
+          <p class="card-text">Pelembap ringan dengan aloe vera untuk kulit sehat dan bercahaya.</p>
+          <a href="#" class="btn btn-custom">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center p-3 mt-5">
+  © 2025 GlowSkin Natural Beauty | Email: contact@glowskin.id | 
+  <a href="#" class="text-white">Instagram</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
