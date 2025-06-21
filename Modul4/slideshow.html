@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Slideshow - Makanan</title>
+</head>
+<body>
+  <h2>Galeri Gambar Makanan</h2>
+  <img id="slideshow-image" src="" alt="Slideshow Makanan" width="500">
+  <br>
+  <button onclick="gantiGambar(-1)">Previous</button>
+  <button onclick="gantiGambar(1)">Next</button>
+
+  <script>
+    var gambar = [
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80", // Nasi Goreng
+      "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=800&q=80", // Mie Ayam
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", // Salad
+      "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80", // Burger
+      "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80", // Pineapple
+
+    ];
+
+    var indexGambar = 0;
+    var imageElement = document.getElementById("slideshow-image");
+
+    function tampilkanGambar() {
+      imageElement.src = gambar[indexGambar];
+    }
+
+    function gantiGambar(arah) {
+      indexGambar += arah;
+      if (indexGambar >= gambar.length) {
+        indexGambar = 0;
+      }
+      if (indexGambar < 0) {
+        indexGambar = gambar.length - 1;
+      }
+      tampilkanGambar();
+    }
+
+    tampilkanGambar();
+  </script>
+</body>
+</html>
